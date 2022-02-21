@@ -1,9 +1,7 @@
-lst = [ 0,9,0,6,7,8]
+lst = [0, 9, 0, 6, 7, 9, 7, 8]
 x = len(lst)
 for i in range(x):
-    if lst[i] != 0:
-        lst[i] +=1
-    elif lst[i] == 0:
+    if lst[i] == 0:
         del lst[i]
         lst.append(0)
 print(lst)
